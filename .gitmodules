@@ -1,0 +1,3 @@
+[submodule "themes/medium"]
+	path = themes/medium
+	url = https://github.com/crazed-developer/mediumish-gohugo-theme.git
