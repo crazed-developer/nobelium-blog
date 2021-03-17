@@ -1,3 +1,71 @@
-baseURL = "http://example.org/"
+baseURL = "https://www.nobelium-aps.dk/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = "true"
+theme = "medium"
+
+[languages.en]
+title = "Nobelium ApS"
+languageName = "en"
+copyright = "Steffen Otto Jensen - All rights reserved"
+
+## Main Menu
+[[languages.en.menu.main]]
+name = "Blog"
+weight = 100
+identifier = "blog"
+url = "/blog"
+
+[[languages.en.menu.main]]
+name = "About Me"
+identifier = "about"
+weight = 200
+url = "/static/about"
+
+[languages.en.params.author]
+name = "Steffen Otto Jensen"
+thumbnail = "/images/author.jpg"
+description = ""
+
+[languages.en.params.index]
+picture = "/images/author.jpg"
+title = "Steffen Otto Jensen"
+alertbar = true
+subtitle = "Headline text"
+mdtext = '''Longer description!\
+line 2.'''
+
+# ------------------------------------------------------------------------------
+
+[languages.da]
+title = "Nobelium ApS"
+languageName = "da"
+copyright = "Steffen Otto Jensen - Alle rettigheder forbeholdt."
+
+## Main Menu
+[[languages.da.menu.main]]
+name = "Blog"
+weight = 100
+identifier = "blog"
+url = "/blog"
+
+[[languages.da.menu.main]]
+name = "Om Mig"
+identifier = "about"
+weight = 200
+url = "/static/about"
+
+[languages.da.params.author]
+name = "Steffen Otto Jensen"
+thumbnail = "/images/author.jpg"
+description = ""
+
+[languages.da.params.index]
+picture = "/images/author.jpg"
+title = "Steffen Otto Jensen"
+alertbar = true
+subtitle = "Overskrift tekst"
+mdtext = '''Længere beskrivelse!\
+linje 2'''
+
