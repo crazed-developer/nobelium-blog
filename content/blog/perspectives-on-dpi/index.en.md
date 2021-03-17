@@ -2,7 +2,7 @@
 title: "Perspectives on Dpi"
 date: 2021-03-17T00:50:38+01:00
 tags: ["dpi", "imaging"]
-draft: true
+draft: false
 ---
 ## DPI strange and confusing
 
