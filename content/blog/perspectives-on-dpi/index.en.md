@@ -17,7 +17,7 @@ Well not quite, it's actually not that simple. A picture file, lets say a .jpg f
 
 So for a deeper understanding of DPI, lets follow the complete flow of the pixels:
 
-1. Your camera captures an image, lets say it's `6016px x 4016ps` where px stands for pixels. (With an image sensor of the size: `23,6mm x 15,6mm`)
+1. Your camera captures an image, lets say it's `6016px x 4016px` where px stands for pixels. (With an image sensor of the size: `23,6mm x 15,6mm`)
 2. You save this image file to your disk on your computer.
 
 How many DPI is the file ?
