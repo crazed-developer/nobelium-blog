@@ -1,85 +1,54 @@
 ---
-title: "Perspectives on Dpi"
+title: "Perspectives on DPI / PPI"
 date: 2021-03-17T00:50:38+01:00
 tags: ["dpi", "imaging"]
 draft: false
 ---
-## DPI strange and confusing
+#### Monitors / Displays
 
-So what is DPI? 
-- It stands for dots per inch.
-- One inch is 25,40mm
-- So 300 DPI means that for each 25,40 millimeters, there are 300 dots / pixels.
+Often DPI is advertized on products you buy. Such as monitors, phones, printers, scanners and inside software. It's actually not so complicated to understand what it is in general. But it can be a little opaque sometimes especially when you talk printing, and image files. Then it's easy to get a little confused. Actually DPI should be used when talking about prints, and PPI (Pixels Per Inch) should be used for displays. But basically they are the same thing.
 
-So you wish to have high quality pictures from a technical perspective? You need high DPI right?
+In consumer products I feel that when Apple introduced the First iPhone with a Retnia display. A lot of consumers also started being more attentive to the PPI on screens. The first Retnia display was a huge step in display quality, but now it's hard to find a low resolution display. So no need to pay too much attention. It later progressed into NoteBook computers and monitors, nicely branded like 4K or Retnia Display. What ever it's called, it just means for every inch of display you have this many pixels. (One inch is 25,40mm)
 
-Well not quite, it's actually not that simple. A picture file, lets say a .jpg file without changeing the file one bit, can be concidered to have multiple DPI's. It all comes down to the display size vs. the number of pixels of the image.
+So if you display a picture 600 pixels wide and 600 pixels high on a 300 PPI monitor. Your displayed image will be a two inch square (5,08mm x 5,08mm). 
 
-So for a deeper understanding of DPI, lets follow the complete flow of the pixels:
+A few examples of display PPI's
+- Google Pixel 4A 5G Phone: 413 PPI
+- Philips 328P6VU 32" 4K monitor: 139 PPI
+- Lenovo P27h-10 27" monitor: 109 PPI
+- Macbook Pro 15" 2018: 220 PPI
 
-1. Your camera captures an image, lets say it's `6016px x 4016px` where px stands for pixels. (With an image sensor of the size: `23,6mm x 15,6mm`)
-2. You save this image file to your disk on your computer.
+>So a question, what is the PPI on a 4K TV (4K being `4096px x 2160px`) Where px stands for Pixels? This can not be answered, there are one very important piece of information missing! We need to know how large the dispalayed image is, once we know that it can be calculated, or counted. The bigger the TV the lower the PPI, with the resolution being constant at 4K.
 
-How many DPI is the file ?
-: It's a trick question, It's got no DPI at all!
+#### Files
 
-Why?
-: It's **not** being displayed, **so it can't be measured**.
+A file is a computer resource for recording data. It's what we use to save our image files to disk, so they don't get lost! Files does not care what you store inside them, it can be movies, text, images or music. In our case we store image data. Very often this means jpeg image data. But it could be other formats too.
 
-So, I promished a deeper understanding! Here comes the first part, to calculate DPI you can use the following formula:
+>So as enthusiasts of pictures and photograpy, we will of course need to make sure we save our files in a very high DPI, right? This does not make sense, a file can not have a DPI! Always remember, the DPI comes down to the display- or print size. You can choose to have your file printed at different DPI's, which if you do not change the resolution of the image will result in different sizes of prints. 
 
-`DPI = (Pixels * 25,4mm) / [displayed size in mm]`
+#### Cameras
 
-#### Camera sensor DPI
+Your camera has a PPI, this is counted on the sensor. Which is the digital eqvivalent of old fashioned film in the camera. The sensor has a resolution, in the case of a Fujifilm XT-20, this resolution is `6016px x 4016px` and with the sensor being of the size `23,6mm x 15,6mm` it can be calculated how high the PPI is on this particular sensor.
 
-This means that the **on the camera sensor** the image you captured above has: 
+For this calculation we use this formula: `DPI = (Pixels * 25,4mm) / [displayed size in mm]`
 
-`6474 DPI = (6016px * 25,4mm) / 23,6mm`
+Here the numbers are plotted in: `(6016px * 25,4mm) / 23,6mm = 6474 PPI`. Thats a huge PPI, compared to my main monitor which has 139 PPI.
 
-#### Lets give a practical example:
-- You print the image in the size 600mm x 400mm (60cm x 40cm) (Without doing any editing or modification to the file at all)
+>So what is the DPI of the image files that comes out of this camera ? Files still have no PPI, it needs to be displayed at a specific scale to count that. This does not change because it comes from a sensor with a specific PPI.
 
-How many DPI is the print?
+#### Prints
 
-It can be calculated with the already provided formula like this: `254 DPI = (6016px * 25,4mm) / 600mm`
+You wish to print one of your pictures taken with the XT-20 used as an example here. So your image is in the resolution: `6016px x 4016px`, and you print it in the size `600mm x 400mm` (60cm x 40cm). How high is the DPI ?
 
-#### Another example:
-- You now print the image in the size 6000mm x 4000mm (6m x 4m) (Still without modifying the file at all!!!)
+We find that the DPI is: `(6016px * 25,4mm) / 600mm = 254 DPI` this sounds reasonable for a prin this sizet.
 
-How many DPI is the print ?
+What about if we print it 10 times larger (6m x 4m)? I'll spare you the formula, we can do this in our heads. Just divide it by ten, which gives us 25 DPI. This means that each dot the printer prints is 1,016 mm wide. Thats a big dot! Try and visualise this in your mind. Normal printers don't have this size dots. Except maybe for large scale banner printers. Where printing at 300DPI makes no sense at all.
 
-Again, using the same formula: `25 DPI = (6016px * 25,4mm) / 6000mm`
+>But we wish to print at 60 DPI, what now? Is it even possible? Yes what we need is to "up-scale" / "resample" the image, to a higher resolution. There is a formula for this too which looks like this: `Pixels = (DPI * [displayed size in mm]) / 25,4mm`. For our example this gives us an image size of: `14.173px x 9.448px` with the width to height ratio being 1,5. So for large prints like this, you better have a high resolution image to begin with. Because upscaling uses interpolation (Mathematichal formulas for guessing the missing content between the pixels). These are good, but only to a certain extent.
 
-Lets have a closer look, 25 DPI. This means that each dot the printer prints is 1,016 mm wide. Thats a big dot! Try and visualise this in your mind. Normal printers don't have this size dots. Except maybe for large scale banner printers. Where printing at 300DPI makes no sense at all.
+We can also print a smaller and more photo album friendly size, lets select `120mm x 80mm` (12cm x 8cm), using the same formula as the large scale print we get `6016px * 25,4mm) / 120mm = 1273 DPI` This is a problem, because our printer only prints at 300 DPI. So we ned to down-scale the picture to a lower resolution. Again wuth the same formula: `(300 * 120mm) / 25,4mm = 1417px` we can see that the picture needs downscaling to `1417px x 944px` again with the width to height ration being 1,5. Downscaaling has no quality issues, as the large image has all the information needed for the smaller image.
 
-So what do we do, we need to "up-scale" / "resample" the image, to a higher resolution.
-
-Let's just for the example say that the large scale banner printer prints in 60 DPI.
-
-We can use this formula to calculate the pixel width of the image:
-
-`Pixels = DPI * ([displayed size in mm]) / 25,4mm`
-
-This translates to: `14.173px = (60dpi * 6016px) / 25,4mm`
-
-So before printing up-scale the picture to: `14.173px x 9.448px`
-
-So for large prints, you better have a very high resolution to begin with. because up-scaling uses interpolation (Mathematical formulas for guessing the missing content between the existing pixels) these algorithms are good, but only to a certain extent. 
-
-#### A more realistic example:
-- The aforementioned unmodified file will now be printed in 120mm x 80mm (12cm * 8cm). Sounds reasonable.
-
-How many DPI is the print ?
-
-Once again, lets calculate with the same formula: `1273 DPI = (6016px * 25,4mm) / 120mm`
-
-Oh no! Not again, the image is in the wrong resolution. This time its not too low, it's actually too high!
-
-The reason being that the photo printer only prints in 300 DPI. So to which size should the image be "down-scaled" / "resampled"?
-
-We use the second formula introduced again: `1417px = (300 * 120mm) / 25,4mm` this means for the picture to be printed, it needs to be down-scaled to `1417px * 944px`
-
-Downscaling causes no problems for the quality of the print, as the source images actually has more information than the printer can use.
+>Scaling is usually not something you need to fiddle with, it's mostly done transparantly by the printing software.
 
 There are also a limit to how high a DPI the human eye can see. So in all practical terms, an image of 6000 x 4000 is enough, for all normal non special use cases.
 
@@ -87,9 +56,9 @@ There are also a limit to how high a DPI the human eye can see. So in all practi
 
 When I open the image in my Photoshop, and view the image size. It tells me that the image is 72 DPI. Thats quite low!!!
 
-True that actually sounds low, for a high quality print!
+True that actually sounds low, but to be honest it's a confusing number. It's at best just informational, it lets you see which size the image will be at different DPI's Just play a little with the numbers and you can see the sizes change. 
 
-**But** do not only look at the DPI, also look at the size they write!
+Do not only look at the DPI, also look at the size they write!
 
 We need another formula:
 
@@ -99,7 +68,7 @@ So 6016 pixels wide printed at 72 DPI:
 
 `2.122mm = (6016px * 25,4mm) / 72dpi`
 
-That's a print of 2,1 meters x 1,4meters.
+That's a print of 2,1 meters x 1,4meters. Should match what Photoshop writes in the image size dialog.
 
 I hope you see that DPI is a moving target, you need more information than just this number.
 
