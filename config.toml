@@ -32,9 +32,8 @@ description = ""
 picture = "/images/author.jpg"
 title = "Steffen Otto Jensen"
 alertbar = true
-subtitle = "Headline text"
-mdtext = '''Longer description!\
-line 2.'''
+subtitle = "Nobelium ApS"
+mdtext = ''''''
 
 # ------------------------------------------------------------------------------
 
@@ -65,7 +64,6 @@ description = ""
 picture = "/images/author.jpg"
 title = "Steffen Otto Jensen"
 alertbar = true
-subtitle = "Overskrift tekst"
-mdtext = '''Længere beskrivelse!\
-linje 2'''
+subtitle = "Nobelium ApS"
+mdtext = ''''''
 

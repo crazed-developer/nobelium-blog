@@ -11,10 +11,10 @@ Let's take one at a time.
 - Why should you read my blog? It's simple to answer. Dont read blogs to learn, then you should write blog posts. Quite simplified, and most likely wrong. I follow a few blogs myself, and I learn from them too. What I'm trying to say is that when you write something down about a topic. You get deeper into the material. So it's a good tool for self study.
 - So what is Nobelium ApS? It's a holding company I own, which owns part of another company. I like the name, so I use this as the basis of my personal website.
 
+> Nobelium is a synthetic chemical element with the symbol No, and atomic number 102. It is named in honor of Alfred Nobel. The man behind Dynamite and Nobels Prizes. You can read more here https://en.wikipedia.org/wiki/Nobelium
+
 What will I write about?
 - Small topics I find it interesting to dive into.
 - Notes that will help me remember small things.
 
 But which topics? Time will tell, but I expect it to be primarily web technologies.
-
-Men hvilke emner? Tiden må vise dette, men jeg forventer at det primært bliver web teknologier

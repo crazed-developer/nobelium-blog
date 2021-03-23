@@ -11,6 +11,8 @@ Lad os tage det et af gangen.
 - Hvorfor du skal læse min blog? Det er simpelt at svare på. Man skal ikke læse blog posts for at lære noget, så skal man skrive blog posts. Lidt forsimplet, og måske direkte forkert. Faktisk følger jeg nogle få blogs, hvor jeg ofte kan lære noget af hvad andre har skrevet. Hvad jeg prøver at sige er at når man skriver om et emne, så kommer man dybere ned i stoffet, så det er et godt redskab til små selvstudier.
 - Så hvad er Nobelium ApS? Det er et holdingselskab, som jeg er ejer af. Det ejer en del af et andet firma. Jeg kan godt lide navnet, så jeg benytter dette som basis for min personlige hjemmeside.
 
+>Nobelium er et syntetisk grundstof, med symbolet No og atom nummer 102. Det er navngivet til ære for Alfred Nobel. Manden bag opfindelsen af Dynamit samt Nobels priser. du kan læse mere her: https://en.wikipedia.org/wiki/Nobelium
+
 Hvad vil jeg skrive om?
 - Små emner som jeg finder det interassant at dykke lid ned i.
 - Notater, som kan hjælpe mig med at huske små ting.
